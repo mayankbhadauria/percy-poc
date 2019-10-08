@@ -1,6 +1,7 @@
 describe('Integration test with visual testing', function() {
   beforeEach(function() {
-    cy.visit('localhost:4200');
+    cy.clearLocalStorage()
+    cy.visit('http://localhost:4200');
   })
 
   it('should have cards', function() {
