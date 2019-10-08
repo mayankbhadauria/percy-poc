@@ -1,17 +1,21 @@
-describe('My First Test', function() {
-  it('Does not do much!', function() {
-    expect(true).to.equal(true)
-    cy.percySnapshot();
-  })
-})
-
-
 describe('Integration test with visual testing', function() {
-  it('Loads the homepage', function() {
-    // Load the page or perform any other interactions with the app.
-    cy.visit("http://localhost:4200/");
+  beforeEach(function() {
+    cy.visit('localhost:4200');
+  })
 
-    // Take a snapshot for visual diffing
-    cy.percySnapshot();
-  });
+  it('should have cards', function() {
+    cy.get('.card-container').should('exist');
+    cy.percySnapshot('cards');
+  })
+
+  it('should have terminal commands', function() {
+    cy.get('.terminal').should('exist');
+    cy.percySnapshot('terminal');
+  })
+
+  it('On click', function() {
+    cy.get('.toggle').click()
+    cy.percySnapshot('click action');
+  })
+
 });
