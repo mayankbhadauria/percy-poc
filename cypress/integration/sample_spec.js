@@ -14,7 +14,7 @@ describe('Integration test with visual testing', function() {
   })
 
   it('On click', function() {
-    cy.get('.toggle').click()
+    cy.get('.card-container .card').should('exist');
     cy.percySnapshot('click action');
   })
 
