@@ -12,6 +12,6 @@ describe('Integration test with visual testing', function() {
     cy.visit("http://localhost:4200/");
 
     // Take a snapshot for visual diffing
-    cy.percySnapshot();
+    cy.percySnapshot('mayank snapshot');
   });
 });
