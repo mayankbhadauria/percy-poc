@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
 
+Pursope:
+
+Show case how Visual regression testing works 
+How Cypress and Percy visula regression are diffrent 
+Why Percy is better than Cypress
+
+Cypress Visual regression refrence
+https://medium.com/norwich-node-user-group/visual-regression-testing-with-cypress-io-and-cypress-image-snapshot-99c520ccc595
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -17,6 +27,14 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running Cypress unit tests
+
+npm run cypress:open
+
+## Running Cypress with percy visula regress testing
+
+npm run test
 
 ## Running end-to-end tests
 

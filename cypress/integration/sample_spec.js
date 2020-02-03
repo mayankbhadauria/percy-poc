@@ -4,6 +4,11 @@ describe('Integration test with visual testing', function() {
     cy.visit('http://localhost:4200');
   })
 
+  it('Should match previous screenshot "Home Page"', () => {
+    cy.visit('http://localhost:4200');
+    //cy.matchImageSnapshot();
+  });
+
   it('should have cards', function() {
     cy.get('.card-container').should('exist');
     cy.percySnapshot('cards');
