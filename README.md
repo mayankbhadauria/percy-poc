@@ -2,14 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
 
-Pursope:
+# Pursope:
 
 Show case how Visual regression testing works 
 How Cypress and Percy visula regression are diffrent 
 Why Percy is better than Cypress
 
-Cypress Visual regression refrence
+Basics Cypress Visual regression refrence
 https://medium.com/norwich-node-user-group/visual-regression-testing-with-cypress-io-and-cypress-image-snapshot-99c520ccc595
+
+For detail instalation percy with cypress 
+https://docs.percy.io/docs/cypress-tutorial
+
+Details to setup environment variables
+https://docs.percy.io/docs/environment-variables
+
+export PERCY_TOKEN=8faa7d4a148a41f5e5624274cccee73d8ffa79291ed336554c01399e3eef7535
+export PERCY_BRANCH = local 
+PERCY_BRANCH: The branch the build is being run in. Defaults to the current git branch.
+PERCY_TARGET_BRANCH: The branch to compare against. Defaults to master.
 
 
 ## Development server
